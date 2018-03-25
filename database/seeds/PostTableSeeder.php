@@ -11,6 +11,16 @@ class PostTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+       $post = new \App\Post([
+       		'title' => 'Classical Guitar Patterns',
+       		'content' => 'Best methods for learning left hand techniques'
+       ]);
+       $post->save();
+
+       $post = new \App\Post([
+       		'title' => 'Guiliani 120 Right Hand Studies',
+       		'content' => 'Best methods for learning right hand techniques'
+       ]);
+       $post->save();
     }
 }
