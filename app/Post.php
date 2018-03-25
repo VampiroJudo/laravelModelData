@@ -2,7 +2,9 @@
 
 namespace App;
 
-class Post
+use Illuminate/Database/Eloquent/Model;
+
+class Post extends Model
 {
     public function getPosts($session)
     {
