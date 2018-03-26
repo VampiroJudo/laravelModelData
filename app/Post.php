@@ -22,4 +22,8 @@ class Post extends Model {
     	$this->attibutes['content'] = strtolower($value);
     }
 
+    public function setTitleAttribute($value) {
+    	return strtoupper($value);
+    }
+
 }
