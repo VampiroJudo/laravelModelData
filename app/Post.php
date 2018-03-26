@@ -12,4 +12,9 @@ class Post extends Model {
 
     	return $this->hasMany('All\Like', 'post_id');
     }
+
+    public function tags() {
+
+    	return $this->belongsToMany('App\Tag')->withTimestamps();
+    }
 }
